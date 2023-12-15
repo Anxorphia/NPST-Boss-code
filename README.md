@@ -5,3 +5,5 @@ This assumes you have basic knowledge of python aswell as the map itself
 Fill in the variables with the proper Names / Directories and run the script to get it to work
 
 ***THIS REQUIRES -condebug TO BE A GMOD LAUNCH OPTION***
+
+If you do not know how to set a GMOD launch option, please google
