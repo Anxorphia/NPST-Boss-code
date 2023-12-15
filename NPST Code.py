@@ -9,34 +9,7 @@ path = "C:/Program Files (x86)/Steam/steamapps/common/GarrysMod/garrysmod/consol
 def decode(codeinput, npstcode):
     return ' '.join([npstcode.get(char, char) for char in codeinput])
 
-npstcode = {
-    'a': '74',
-    'b': '75',
-    'c': '76',
-    'd': '77',
-    'e': '78',
-    'f': '79',
-    'g': '80',
-    'h': '81',
-    'i': '82',
-    'j': '83',
-    'k': '84',
-    'l': '85',
-    'm': '86',
-    'n': '87',
-    'o': '88',
-    'p': '89',
-    'q': '90',
-    'r': '91',
-    's': '92',
-    't': '93',
-    'u': '94',
-    'v': '95',
-    'w': '96',
-    'x': '97',
-    'y': '98',
-    'z': '99'
-}
+npstcode = {'a': '74','b': '75','c': '76','d': '77','e': '78','f': '79','g': '80','h': '81','i': '82','j': '83','k': '84','l': '85','m': '86','n': '87','o': '88','p': '89','q': '90','r': '91','s': '92','t': '93','u': '94','v': '95','w': '96','x': '97','y': '98','z': '99'}
 # clear the console.log folder when you start the script to limit how large the file gets, it can get seriously big if left untouched
 with open(path, "w", encoding='UTF-8'):
     pass 
