@@ -1,4 +1,4 @@
-This is created with the intention for Sunrust Garry's Mod Zombie Survival zs_obj_npst
+This is created with the intention for Sunrust Garry's Mod Zombie Survival zs_obj_npst_v13
 
 This assumes you have basic knowledge of python aswell as the map itself
 
