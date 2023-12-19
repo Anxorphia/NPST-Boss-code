@@ -21,7 +21,7 @@ while True:
             if ingamename in line:
                 start_index = line.find(ingamename) + len(ingamename)
                 checkline = line[start_index:].strip()
-                if 0 < len(checkline) <= 4: # check if the text you typed in chat is the encrypted code, it is either 3 or 4 characters long
+                if 0 < len(checkline) <= 4: # check if the text you typed in chat is 3-4 characters, this is what the code is, it will automatically assume all 3-4 length messages are the code and decode them
                     codeinput = checkline
                     codeoutput = decode(codeinput, npstcode)
                     print("Code Input:", codeinput)
