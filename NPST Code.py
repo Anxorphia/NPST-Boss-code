@@ -3,7 +3,7 @@
 
 import pyperclip
 seek = 0
-ingamename = "REPLACE NAME HERE:" # leave the : at the end of your name, this directly reads the ingame chat, format is "{name}:"
+ingamename = "REPLACE NAME HERE:" # leave the : at the end of your name, this directly reads the ingame chat, format is "name:"
 path = "C:/Program Files (x86)/Steam/steamapps/common/GarrysMod/garrysmod/console.log" # replace this with the path to your console.log file, by default it will be here 
 
 def decode(codeinput, npstcode):
