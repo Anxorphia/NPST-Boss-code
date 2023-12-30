@@ -21,7 +21,7 @@ while True:
             if ingamename in line:
                 start_index = line.find(ingamename) + len(ingamename)
                 checkline = line[start_index:].strip()
-                lowercase_checkline = "".join(char for char in checkline if char.islower())[:4]
+                lowercase_checkline = "".join(char for char in checkline if char.islower())
                 if 0 < len(lowercase_checkline) <= 4: # check if the text you typed in chat is 3-4 characters, this is what the code is, it will automatically assume all 3-4 char lowercase messages are the code and decode them
                     codeinput = checkline
                     codeoutput = decode(codeinput, npstcode)
