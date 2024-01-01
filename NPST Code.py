@@ -19,13 +19,13 @@ while True:
         f.seek(seek)
         for line in f:
             if ingamename in line:
-                start_index = line.find(ingamename) + len(ingamename)
-                checkline = line[start_index:].strip()
+                start = line.find(ingamename) + len(ingamename)
+                checkline = line[start:].strip()
                 alphabetic= "".join(char for char in checkline if char.isalpha() and 0 < len(checkline) <= 4)
-                if alphabetic:
+                if alphabetic: # check if the text you typed in chat is 3-4 characters, this is what the code is, it will automatically assume all 3-4 char lowercase messages are the code and decode them
                     codeinput = alphabetic
                     codeoutput = decode(codeinput, npstcode)
                     print("Code Input:", codeinput)
                     print("Code Output:", codeoutput)
-                    pyperclip.copy(codeoutput)  # Copy keypad code to your clipboard
+                    pyperclip.copy(codeoutput) # Copy keypad code to your clipboard
         seek = f.tell()
