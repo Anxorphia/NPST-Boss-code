@@ -20,10 +20,9 @@ while True:
         for line in f:
             if ingamename in line:
                 start = line.find(ingamename) + len(ingamename)
-                checkline = line[start:].strip()
-                alphabetic= "".join(char for char in checkline if char.isalpha() and 0 < len(checkline) <= 4)
-                if alphabetic: # check if the text you typed in chat is 3-4 characters, this is what the code is, it will automatically assume all 3-4 char lowercase messages are the code and decode them
-                    codeinput = alphabetic
+                aftername = line[start:].strip()
+                if all(char.isalpha() for char in aftername) and 0 < len(aftername) <= 4:
+                    codeinput = aftername
                     codeoutput = decode(codeinput, npstcode)
                     print("Code Input:", codeinput)
                     print("Code Output:", codeoutput)
